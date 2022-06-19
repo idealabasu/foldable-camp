@@ -1,4 +1,6 @@
-baseURL: http://example.org/
+baseURL: http://localhost:1313/blog/
 languageCode: en-us
 title: My New Hugo Site
 theme: "website_hugo_framework"
+canonifyURLs: true
+RelativeURLs: true
