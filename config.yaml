@@ -1,4 +1,5 @@
-baseURL: http://localhost:1313/blog/
+baseURL: http://idealab.asu.edu/foldable-camp/
+#baseURL: http://localhost:1313/foldable-camp/
 languageCode: en-us
 title: My New Hugo Site
 theme: "website_hugo_framework"
