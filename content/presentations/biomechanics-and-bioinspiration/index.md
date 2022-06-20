@@ -39,6 +39,7 @@ title: Biomechanics and Bioinspiration
 
 
 ![](img0001.png)
+[Video](https://www.youtube.com/watch?v=pDU4CQWXaNY)
 
 ![](img0002.png)
 
@@ -105,11 +106,14 @@ title: Biomechanics and Bioinspiration
 
 
 ![](img0012.png)
+[Video](https://www.youtube.com/watch?v=FfKQSUhYjlY)
 
 ## SLIP Legs
 
 
 ![](img0013.png)
+[Video](https://www.youtube.com/watch?v=XFXj81mvInc&feature=emb_logo)
+
 
 ## Implementations of SLIP
 
@@ -122,21 +126,25 @@ title: Biomechanics and Bioinspiration
 
 
 ![](img0015.png)
+[Video](https://www.youtube.com/watch?time_continue=224&v=BUmOKfllAEo&feature=emb_logo)
 
 ## 
 
 
 ![](img0016.png)
+[Video](https://www.youtube.com/watch?time_continue=485&v=BUmOKfllAEo&feature=emb_logo)
 
 ## Cheetah Cub
 
 
 ![](img0017.png)
+[Video](https://www.youtube.com/watch?time_continue=554&v=K926HAKRFvw&feature=emb_logo)
 
 ## MIT Cheetah
 
 
 ![](img0018.png)
+[Video](https://www.youtube.com/watch?time_continue=73&v=_luhn7TLfWU&feature=emb_logo)
 
 ## Different Animals
 
@@ -150,27 +158,32 @@ title: Biomechanics and Bioinspiration
 
 ![](img0020.png)
 
+
 * Mechanics of peristaltic locomotion and role of anchoringJ. R. Soc. Interface.9222–233http://doi.org/10.1098/rsif.2011.0339
 
 ## Peristaltic
 
 
 ![](img0021.png)
+[Video](https://www.youtube.com/watch?time_continue=16&v=f6mA8walaSk&feature=emb_logo)
 
 ## Undulatory
 
 
 ![](img0022.png)
+[Video](https://www.youtube.com/watch?v=CkZszsl2aIU&feature=emb_logo)
 
 ## Swimming In Sand
 
 
 ![](img0023.png)
+[Video](https://www.youtube.com/watch?time_continue=2&v=9mwJsGbTkOk&feature=emb_logo)
 
 ## Climbing with Stickybot
 
 
 ![](img0024.png)
+[Video](https://www.youtube.com/watch?v=e4ntbQ6isIk&feature=emb_logo)
 
 ## Foldable-Compatible Legged
 
@@ -194,11 +207,13 @@ title: Biomechanics and Bioinspiration
 
 
 ![](img0028.png)
+[Video]()
 
 ## DASH
 
 
 ![](img0029.png)
+[Video](https://www.youtube.com/watch?time_continue=1&v=UjGIJR5Mxjo&feature=emb_logo)
 
 ## ATRIAS Family
 
@@ -209,4 +224,5 @@ title: Biomechanics and Bioinspiration
 
 
 ![](img0031.png)
+[Video](https://www.youtube.com/watch?time_continue=43&v=Is4JZqhAy-M&feature=emb_logo)
 

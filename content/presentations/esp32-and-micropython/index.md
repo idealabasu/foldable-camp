@@ -52,11 +52,8 @@ title: ESP32 and MicroPython
   * https://www.etechnophiles.com/esp32-dev-board-pinout-specifications-datasheet-and-schematic/
   * https://www.studiopieters.nl/esp32-pinout/
 
+# MicroPython Intro
 
-## MicroPython Intro
-
-
-* 
 
 ## What is Python?
 
@@ -156,17 +153,18 @@ title: ESP32 and MicroPython
 
 ## First ESP32 Program
 
+```python
+from machine import Pin
+from time import sleep
 
-* from machine import Pin
-* from time import sleep
-* 
-* led = Pin(2, Pin.OUT)
-* 
-* while True:
-*     led.value(1)
-*     sleep(1)
-*     led.value(0)
-*     sleep(1)
+led = Pin(2, Pin.OUT)
+
+while True:
+    led.value(1)
+    sleep(1)
+    led.value(0)
+    sleep(1)
+```
 
 ## ESP32 Wifi Access Point and Web Server
 
