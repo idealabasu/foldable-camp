@@ -1,7 +1,34 @@
 baseURL: http://idealab.asu.edu/foldable-camp/
 #baseURL: http://localhost:1313/foldable-camp/
 languageCode: en-us
-title: My New Hugo Site
+title: Foldable Robotics Camp
 theme: "website_hugo_framework"
+
 canonifyURLs: true
 RelativeURLs: true
+
+params:
+#  github_repo: "https://github.com/idealabasu/idealabasu.github.io"
+#  github_edit_branch: main
+  organization_name: IDEAlab
+  home_path: ""
+  author: Daniel M. Aukes
+  description: ""
+  email: danaukes@asu.edu
+
+ignorefiles:
+  - ignore/*
+  
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: monokailight
+    noClasses: true
+
+
+ignoreErrors:
+- "error-remote-getjson"
+
+enableInlineShortcodes: true
