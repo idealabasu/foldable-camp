@@ -1,6 +1,7 @@
 ---
 title: Schedule
 summary: Weekly and daily structure of events
+published: False
 ---
 
 

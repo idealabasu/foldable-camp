@@ -15,6 +15,7 @@ params:
   author: Daniel M. Aukes
   description: ""
   email: danaukes@asu.edu
+  enable_search: false
 
 ignorefiles:
   - ignore/*
@@ -32,3 +33,4 @@ ignoreErrors:
 - "error-remote-getjson"
 
 enableInlineShortcodes: true
+
