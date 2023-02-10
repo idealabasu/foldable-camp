@@ -1,4 +1,6 @@
 site_name: Foldable Camp
+repo_url: https://github.com/idealabasu/foldable-camp
+edit_uri: edit/main/docs/
 theme:
   name: material
   custom_dir: custom_theme/
