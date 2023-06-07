@@ -13,7 +13,16 @@ theme:
     - toc.follow    
 #    - toc.integrate 
     - navigation.top
+    - navigation.path
+#    - navigation.indexes
+    - navigation.prune
     
 markdown_extensions:
   - pymdownx.tilde: {}
 
+nav:
+- index.md
+- what-to-bring.md
+- daily-schedule.md
+- lesson-plan.md
+- instructor-information.md
