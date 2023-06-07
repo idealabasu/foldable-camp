@@ -5,8 +5,8 @@ menu: General Info
 
 ## Quick Overview
 
-* **Daily Schedule:**  The camp will run 9-4pm Monday thru Friday June 12-16, 2023 in Peralta Hall, Room 103 on the ASU Polytechnic Campus.  See our [general information](/day-camp-general-info/#locations) page for map and details.
-* We will hold a **student showcase** from **3-4pm on Friday, June 16**.  
+* **Daily Schedule:**  The camp will run 9am-3:45pm Monday thru Friday June 12-16, 2023 in Peralta Hall, Room 103 on the ASU Polytechnic Campus.  See our [general information](/day-camp-general-info/#locations) page for map and details.
+* We will hold a **student showcase** from **3pm-4pm on Friday, June 16**.  
 
 ## Check-in / Check-Out
 
