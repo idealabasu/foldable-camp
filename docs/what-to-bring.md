@@ -18,9 +18,6 @@ title: What to Bring
 
 ### First Day
 
-* Signed Permission Forms (if you did not yet complete it)
-* Pickup / Dropoff Form (if you did not yet complete it)
-* Emergency Contact Info (if you did not yet complete it)
 * **Adult** driver's license (for adult check-in and check-out)  
     _or_  
     **Student** driver's license (for student check-in and check-out)
