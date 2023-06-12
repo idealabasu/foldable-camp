@@ -28,10 +28,13 @@ theme:
 markdown_extensions:
   - pymdownx.tilde: {}
 
-nav:
-- index.md
-- what-to-bring.md
-- daily-schedule.md
-- lesson-plan.md
-- instructor-information.md
-- classroom-info.md
+# nav:
+# - index.md
+# - what-to-bring.md
+# - daily-schedule.md
+# - lesson-plan.md
+# - instructor-information.md
+# - classroom-info.md
+# - presentations
+#   - biomechanics-and-bioinspiration
+#   - foldable-mechanisms

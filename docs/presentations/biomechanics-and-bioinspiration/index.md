@@ -2,6 +2,7 @@
 title: Biomechanics and Bioinspiration
 ---
 
+<!--
 ## After Lunch Plan
 
 
@@ -17,6 +18,8 @@ title: Biomechanics and Bioinspiration
   * What’s your idea for how to make it “foldable”?
 * Form Teams
 * Make a body module.
+
+-->
 
 ## Bio-Inspiration
 

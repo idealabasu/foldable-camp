@@ -22,8 +22,10 @@ Specific Concepts by topic
 * Make Padlet and get people using it
 * Open up kits and see what's inside
 * talk about popup book mechanisms
+* what's moment arm?
 * make a popup book
-* 
+* breast stroke example
+* walking example
 
 
 -->
