@@ -203,6 +203,3 @@ while True:
 
 
 * https://www.sparkfun.com/servos
-* 
-* Day 2 Kahoot Vocab Practice
-

@@ -2,18 +2,6 @@
 title: ESP32 and MicroPython
 ---
 
-## Welcome
-
-
-* Group Padlet Link HERE
-* Presentation Folder
-
-## Vocab Review from Yesterday!
-
-
-* Go to our Kahoot Game!
-* https://play.kahoot.it/v2/?quizId=b9e3cfc4-d2fe-4c3f-adad-e9f343f837cd
-
 ## Overview of the ESP32 DevKit DOIT V1
 
 
