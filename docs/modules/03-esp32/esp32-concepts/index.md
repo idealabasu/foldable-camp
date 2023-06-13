@@ -78,7 +78,7 @@ title: ESP32 and MicroPython
   * data is not easily hidden.
   * data is accessible by anything
 
-## So then, why other languages?
+<!-- ## So then, why other languages?
 
 
 * Lower level languages can be easier to connect to hardware’s functionality
@@ -90,7 +90,7 @@ title: ESP32 and MicroPython
 * A “distribution” of Python for your PC
   * A way to manage all the “packages” you can install on your PC
   * A solution for dealing with conflicting installation requirements.
-  * A way to share packages that contained OS-specific, compiled libraries.
+  * A way to share packages that contained OS-specific, compiled libraries. -->
 
 ## What is MicroPython?
 
@@ -99,13 +99,10 @@ title: ESP32 and MicroPython
 * The system of software packages written for it
 * The same idea of an interpreter… you just access it over USB.
 
-## What is Thonny?
+## What is VSCode?
 
-
-  * a Graphical User Interface (GUI) written in Python
-  * A text editor
-  * The interface to your device and its interpreter
-  * A nice way to re-flash your device
+  * A powerful code editor
+  * Plugins for communicating to your device
 
 ## Python Interpreter
 
@@ -164,6 +161,22 @@ while True:
     sleep(1)
     led.value(0)
     sleep(1)
+```
+
+
+## Read ADC
+
+```python
+from machine import Pin, ADC
+from time import sleep
+
+pot = ADC(Pin(34))
+pot.atten(ADC.ATTN_11DB)       #Full range: 3.3v
+
+while True:
+  pot_value = pot.read()
+  print(pot_value)
+  sleep(0.1)
 ```
 
 ## ESP32 Wifi Access Point and Web Server
