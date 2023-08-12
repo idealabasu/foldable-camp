@@ -126,6 +126,13 @@ def angle_to_pwm(degrees):
     # divide the desired angle by the input scaling, multiply
     #by the output scaling, and add the range_low value as an offset.
     output_pwm = ((degrees/input_range)*output_range)+range_low
+
+    if output_pwm < range_low:
+        output_pwm = range_low
+
+    if output_pwm > range_high:
+        output_pwm = range_high
+        
     # return the computed value as an integer
     return int(output_pwm)
 
@@ -145,7 +152,7 @@ def get_seconds_float():
     return dt
 
 f = .5
-A = 30
+A = 90
 b = 90
 
 l1 = 0
@@ -182,4 +189,4 @@ while True:
     servo2.duty(angle_to_pwm(y2))
     servo3.duty(angle_to_pwm(y3))
     servo4.duty(angle_to_pwm(y4))
-```
+    ```
