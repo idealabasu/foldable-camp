@@ -22,7 +22,7 @@ theme:
 #    - toc.integrate 
     - navigation.top
     - navigation.path
-#    - navigation.indexes
+    - navigation.indexes
     - navigation.prune
     
 markdown_extensions:
