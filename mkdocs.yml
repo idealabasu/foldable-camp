@@ -24,7 +24,8 @@ theme:
     - navigation.path
     - navigation.indexes
     - navigation.prune
-    
+    - content.action.edit
+
 markdown_extensions:
   - pymdownx.tilde: {}
 
