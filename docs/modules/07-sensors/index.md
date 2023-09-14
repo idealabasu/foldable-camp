@@ -22,7 +22,7 @@
 * Strain
 
 
-![](sensors-images/img0000.png){height=40%}
+![](img0000.png){height=40%}
 
 ## What is the purpose of using sensors?
 
@@ -39,16 +39,16 @@
 * 
 * 
 
-![](sensors-images/img0001.png){height=40%}
+![](img0001.png){height=40%}
 
-![](sensors-images/img0002.png){height=40%}
+![](img0002.png){height=40%}
 
 ## How do sensors work? Let’s start by understanding a circuit.
 
 
 * Example of a circuit:
 
-![](sensors-images/img0003.png){height=40%}
+![](img0003.png){height=40%}
 
 
 ## How do sensors work continued…
@@ -56,7 +56,7 @@
 
 * Example of a pressure sensor:
 
-![](sensors-images/img0004.png){height=40%}
+![](img0004.png){height=40%}
 
 * The pressure is converted into a standard electrical signal by the sensor.
 
@@ -73,16 +73,16 @@
   * Phototransistor
     * +light
 
-![](sensors-images/img0005.png){height=40%}
+![](img0005.png){height=40%}
 
 ## Magnetic Field
 
 
-![](sensors-images/img0006.png){height=40%}
+![](img0006.png){height=40%}
 
 ## 
 
-![](sensors-images/img0007.png){height=40%}
+![](img0007.png){height=40%}
 
 ## 
 
@@ -96,7 +96,7 @@
 ## Motion
 
 
-![](sensors-images/img0008.png){height=40%}
+![](img0008.png){height=40%}
 
   * Accelerometer
     * accelerations
@@ -112,7 +112,7 @@
 ## Position - Resistive
 
 
-![](sensors-images/img0009.png){height=40%}
+![](img0009.png){height=40%}
 
 ## 
 
@@ -128,14 +128,14 @@
 ## Position - Capacitive
 
 
-![](sensors-images/img0010.png){height=40%}
+![](img0010.png){height=40%}
 
 ## 
 
 ## Position - Other
 
 
-![](sensors-images/img0011.png){height=40%}
+![](img0011.png){height=40%}
 
 * Theory
 
@@ -148,7 +148,7 @@
     * High Noise
     * Longer distances
 
-![](sensors-images/img0012.png){height=40%}
+![](img0012.png){height=40%}
 
 ## 
 
@@ -157,7 +157,7 @@
 ## Pressure / Force
 
 
-![](sensors-images/img0013.png){height=40%}
+![](img0013.png){height=40%}
 
 ## 
 
@@ -171,7 +171,7 @@
 ## Dynamic Tactile Sensing
 
 
-![](sensors-images/img0014.png){height=40%}
+![](img0014.png){height=40%}
 
 ## 
 
@@ -180,7 +180,7 @@
 ## Position - Induction
 
 
-![](sensors-images/img0015.png){height=40%}
+![](img0015.png){height=40%}
 
 ## 
 
@@ -198,7 +198,7 @@
 ## Temperature
 
 
-![](sensors-images/img0016.png){height=40%}
+![](img0016.png){height=40%}
 
 ## 
 
@@ -218,37 +218,37 @@
     * Capacitive
     * Inductive
 
-![](sensors-images/img0017.png){height=40%}
+![](img0017.png){height=40%}
 
 ## Embedding Sensors
 
 
-![](sensors-images/img0018.png){height=40%}
+![](img0018.png){height=40%}
 
 ## 
 
-![](sensors-images/img0019.png){height=40%}
+![](img0019.png){height=40%}
 
 ## 
 
-![](sensors-images/img0020.png){height=40%}
+![](img0020.png){height=40%}
 
 ## 
 
-![](sensors-images/img0021.png){height=40%}
+![](img0021.png){height=40%}
 
 ## 
 
-![](sensors-images/img0022.png){height=40%}
+![](img0022.png){height=40%}
 
 ## 
 
-![](sensors-images/img0023.png){height=40%}
+![](img0023.png){height=40%}
 
 ## Common Circuits
 
 
-![](sensors-images/img0024.png){height=40%}
+![](img0024.png){height=40%}
 
 ## 
 
@@ -256,15 +256,15 @@
 
 ## 
 
-![](sensors-images/img0025.png){height=40%}
+![](img0025.png){height=40%}
 
 ## 
 
-![](sensors-images/img0026.png){height=40%}
+![](img0026.png){height=40%}
 
 ## 
 
-![](sensors-images/img0027.png){height=40%}
+![](img0027.png){height=40%}
 
 ## Circuit Conditioning
 
