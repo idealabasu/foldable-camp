@@ -1,13 +1,8 @@
 ﻿---
+title: An Introduction to Sensors
 ---
 
-# sensors.md
-
-## An Introduction to Sensors
-
-
 ## What are sensors?
-
 
 * A sensor is a device used to measure physical properties of an object or system.
 * Common physical properties:
@@ -21,255 +16,235 @@
 * Acceleration
 * Strain
 
-
-![](img0000.png){height=40%}
+![](img0000.png)
 
 ## What is the purpose of using sensors?
 
-
 * Industrial use
-  * Monitor systems
-  * Control processes
-  * Safety measures
-* 
-* 
+    * Monitor systems
+    * Control processes
+    * Safety measures
+*
+*
 * Medical use
-  * Diagnose patients
-  * Monitor vitals
-* 
-* 
+    * Diagnose patients
+    * Monitor vitals
+*
+*
 
-![](img0001.png){height=40%}
+![](img0001.png)
 
-![](img0002.png){height=40%}
+![](img0002.png)
 
-## How do sensors work? Let’s start by understanding a circuit.
-
+## How do sensors work? Let’s start by understanding a circuit
 
 * Example of a circuit:
 
-![](img0003.png){height=40%}
-
+![](img0003.png)
 
 ## How do sensors work continued…
 
-
 * Example of a pressure sensor:
 
-![](img0004.png){height=40%}
+![](img0004.png)
 
 * The pressure is converted into a standard electrical signal by the sensor.
 
 ## Light
 
-
-  * Lots of different mechanisms for light
-  * Photoresistor
-  * Photodiode
+* Lots of different mechanisms for light
+* Photoresistor
+* Photodiode
     * Photovoltaic
-      * +light –> +V
+        * +light –> +V
     * Photoconductor
-      * +light –> -R
-  * Phototransistor
+        * +light –> -R
+* Phototransistor
     * +light
 
-![](img0005.png){height=40%}
+![](img0005.png)
 
 ## Magnetic Field
 
+![](img0006.png)
 
-![](img0006.png){height=40%}
+##
 
-## 
+![](img0007.png)
 
-![](img0007.png){height=40%}
+##
 
-## 
-
-* 
-  * Types
-    * Reed Switch
-    * Inductive - Galvonometer
-    * Hall Effect Sensor – go linear.
-* http://howtomechatronics.com/how-it-works/electrical-engineering/hall-effect-hall-effect-sensors-work/ http://www.brown.edu/Departments/Engineering/Courses/En123/CirRevFiles/Inductance2.htm
+*
+    * Types
+        * Reed Switch
+        * Inductive - Galvonometer
+        * Hall Effect Sensor – go linear.
+* <http://howtomechatronics.com/how-it-works/electrical-engineering/hall-effect-hall-effect-sensors-work/> <http://www.brown.edu/Departments/Engineering/Courses/En123/CirRevFiles/Inductance2.htm>
 
 ## Motion
 
+![](img0008.png)
 
-![](img0008.png){height=40%}
-
-  * Accelerometer
+* Accelerometer
     * accelerations
-  * Gyro
+* Gyro
     * Angular accelerations
-  * IMU
+* IMU
     * Everything
-      * Smoothing
-      * Integration
-      * Position, Velocity, Acceleration
-      * Rotation, rotational velocity, angular acceleration
+        * Smoothing
+        * Integration
+        * Position, Velocity, Acceleration
+        * Rotation, rotational velocity, angular acceleration
 
 ## Position - Resistive
 
+![](img0009.png)
 
-![](img0009.png){height=40%}
+##
 
-## 
-
-* 
-  * Temperature-dependence
-  * Hysterisis
-  * Types
-    * Linear Potentiometer
-    * Rotary Potentiometer
-    * Flex Sensor
-    * etc
+*
+    * Temperature-dependence
+    * Hysterisis
+    * Types
+        * Linear Potentiometer
+        * Rotary Potentiometer
+        * Flex Sensor
+        * etc
 
 ## Position - Capacitive
 
+![](img0010.png)
 
-![](img0010.png){height=40%}
-
-## 
+##
 
 ## Position - Other
 
-
-![](img0011.png){height=40%}
+![](img0011.png)
 
 * Theory
 
-## 
+##
 
-  * Emitter/Detector Pair
+* Emitter/Detector Pair
     * Proximity
     * Based on reflectance
-  * Ultrasonic
+* Ultrasonic
     * High Noise
     * Longer distances
 
-![](img0012.png){height=40%}
+![](img0012.png)
 
-## 
+##
 
-* http://maxembedded.com/2013/08/how-to-build-an-ir-sensor/
+* <http://maxembedded.com/2013/08/how-to-build-an-ir-sensor/>
 
 ## Pressure / Force
 
+![](img0013.png)
 
-![](img0013.png){height=40%}
+##
 
-## 
-
-* 
-  * Strain Gauge
-    * Temperature-sensitive
-    * Wheatstone Bridge
-    * Load Cell
-  * Other Position Sensors
+*
+    * Strain Gauge
+        * Temperature-sensitive
+        * Wheatstone Bridge
+        * Load Cell
+    * Other Position Sensors
 
 ## Dynamic Tactile Sensing
 
+![](img0014.png)
 
-![](img0014.png){height=40%}
+##
 
-## 
-
-  * Piezoelectric Sensor
+* Piezoelectric Sensor
 
 ## Position - Induction
 
+![](img0015.png)
 
-![](img0015.png){height=40%}
+##
 
-## 
-
-* 
-  * Non-contacting
-  * Requires AC
-  * Senses Metals, esp Ferrous Metals
-  * Types:
-    * Inductive Proximity Switch, Position Sensors
-    * LVDT
-    * Inductive Encoders
-* https://sensortech.wordpress.com/2014/03/05/basic-operating-principle-of-an-inductive-proximity-sensor/
-* http://sensorwiki.org/doku.php/sensors/linear_variable_differential_transformer
+*
+    * Non-contacting
+    * Requires AC
+    * Senses Metals, esp Ferrous Metals
+    * Types:
+        * Inductive Proximity Switch, Position Sensors
+        * LVDT
+        * Inductive Encoders
+* <https://sensortech.wordpress.com/2014/03/05/basic-operating-principle-of-an-inductive-proximity-sensor/>
+* <http://sensorwiki.org/doku.php/sensors/linear_variable_differential_transformer>
 
 ## Temperature
 
+![](img0016.png)
 
-![](img0016.png){height=40%}
+##
 
-## 
-
-* 
-  * RTD: Resistance temperature detector
-  * Thermistor
-  * Thermocouple
+*
+    * RTD: Resistance temperature detector
+    * Thermistor
+    * Thermocouple
 
 ## Encoders
 
-
-  * Types
+* Types
     * Optical
-      * Absolute
-      * Relative
+        * Absolute
+        * Relative
     * Magnetic
     * Capacitive
     * Inductive
 
-![](img0017.png){height=40%}
+![](img0017.png)
 
 ## Embedding Sensors
 
+![](img0018.png)
 
-![](img0018.png){height=40%}
+##
 
-## 
+![](img0019.png)
 
-![](img0019.png){height=40%}
+##
 
-## 
+![](img0020.png)
 
-![](img0020.png){height=40%}
+##
 
-## 
+![](img0021.png)
 
-![](img0021.png){height=40%}
+##
 
-## 
+![](img0022.png)
 
-![](img0022.png){height=40%}
+##
 
-## 
-
-![](img0023.png){height=40%}
+![](img0023.png)
 
 ## Common Circuits
 
+![](img0024.png)
 
-![](img0024.png){height=40%}
+##
 
-## 
+* <http://hades.mech.northwestern.edu/index.php/Photodiodes_and_Phototransistors>
 
-  * http://hades.mech.northwestern.edu/index.php/Photodiodes_and_Phototransistors
+##
 
-## 
+![](img0025.png)
 
-![](img0025.png){height=40%}
+##
 
-## 
+![](img0026.png)
 
-![](img0026.png){height=40%}
+##
 
-## 
-
-![](img0027.png){height=40%}
+![](img0027.png)
 
 ## Circuit Conditioning
 
-
-  * Self-contained packages
-  * Op Amps
-  * Transistor-based amplification
-
+* Self-contained packages
+* Op Amps
+* Transistor-based amplification

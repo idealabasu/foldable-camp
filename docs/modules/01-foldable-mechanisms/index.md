@@ -38,7 +38,7 @@
 
 * Step 1
 
-![](img0000.png){height=40%}
+![](img0000.png)
 
 
 ## Activity
@@ -50,22 +50,22 @@
 
 * Step 2
 
-![](img0001.png){height=40%}
+![](img0001.png)
 
 ## Why are we talking about foldable mechanisms?
 
-![](img0002.png){height=40%}
+![](img0002.png)
 
 
 * Robots are mechanisms, or machines.
 * Serial vs. Parallel
 * Composed of links and joints
 
-![](img0003.png){height=40%}
+![](img0003.png)
 
 ## Mechanisms
 
-![](img0004.png){height=40%}
+![](img0004.png)
 
 
 * A system of parts working together in a machine; a piece of machinery.
@@ -84,7 +84,7 @@
 * 
 * In a serial mechanism, the motion or force is transmitted through a series of interconnected links or elements, typically connected by joints or hinges. Each link is responsible for transmitting or transforming the input motion or force to the next link in the chain, until it reaches the final output.
 
-![](img0005.png){height=40%}
+![](img0005.png)
 
 ## Parallel Mechanism
 
@@ -93,7 +93,7 @@
 * 
 * To understand this concept, let's use an example of a parallel robot called a Delta robot. A Delta robot consists of three parallel arms connected to a base and a common platform, which acts as the end-effector. Each arm has multiple joints that allow it to move in various directions.
 
-![](img0006.png){height=40%}
+![](img0006.png)
 
 ## Degrees of Freedom
 
@@ -102,9 +102,9 @@
 * 
 * To understand degrees of freedom, let's consider a simple example: a point particle in space. A point particle can move freely in three dimensions: forward and backward (along the x-axis), left and right (along the y-axis), and up and down (along the z-axis). In this case, the point particle has three degrees of freedom.
 
-![](img0007.png){height=40%}
+![](img0007.png)
 
-![](img0008.png){height=40%}
+![](img0008.png)
 
 
 * How many degrees of freedom are represented in this gif?
@@ -130,7 +130,7 @@
 
 * An intermediate rod or piece for transmitting force or motion; especially, a short connecting rod with a hole or pin at each end.
 
-![](img0009.png){height=40%}
+![](img0009.png)
 
 ## Joints
 
@@ -139,7 +139,7 @@
 * Many different kinds of joints with different degrees of freedom
 * Folded devices use systems of joints
 
-![](img0010.png){height=40%}
+![](img0010.png)
 
 * Flores, Paulo & Lankarani, Hamid. (2016). Contact Force Models for Multibody Dynamics.
 
@@ -150,28 +150,28 @@
 
 * https://en.wikipedia.org/wiki/Linkage_(mechanical)\
 
-![](img0011.png){height=40%}
+![](img0011.png)
 
 ## More Complex Joints
 
 
-![](img0012.png){height=40%}
+![](img0012.png)
 
 * Chase, Kenneth & Magleby, Spencer & Glancy, Charles. (2000). A Comprehensive System for Computer-Aided Tolerance Analysis of 2-D and 3-D Mechanical Assemblies. 10.1007/978-1-4615-5797-5_23.
 
 ## Joints
 
 
-![](img0013.png){height=40%}
+![](img0013.png)
 
 * https://24.media.tumblr.com/tumblr_mck6ejg15N1r0v3zro3_1280.jpg
 
 ## Origami vs. Kirigami
 
 
-![](img0014.png){height=40%}
+![](img0014.png)
 
-![](img0015.png){height=40%}
+![](img0015.png)
 
 * https://www.youtube.com/watch?v=kUsxMXwCW8A
 
@@ -194,9 +194,9 @@
   * …
 * Engineering Context: I-beams
 
-![](img0016.png){height=40%}
+![](img0016.png)
 
-![](img0017.png){height=40%}
+![](img0017.png)
 
 ## “Foldable” Joints
 
