@@ -2,7 +2,7 @@
 title: Gaits and Functions
 ---
 
-## Plan for today
+<!-- ## Plan for today -->
 
 ## What is a "Gait"
 
@@ -189,4 +189,4 @@ while True:
     servo2.duty(angle_to_pwm(y2))
     servo3.duty(angle_to_pwm(y3))
     servo4.duty(angle_to_pwm(y4))
-    ```
+```
