@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#plan-for-today" class="md-skip">
+        <a href="#what-is-a-gait" class="md-skip">
           Skip to content
         </a>
       
@@ -907,13 +907,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#plan-for-today" class="md-nav__link">
-    Plan for today
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#what-is-a-gait" class="md-nav__link">
     What is a "Gait"
   </a>
@@ -1065,76 +1058,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#import-all-the-libraries" class="md-nav__link">
-    import all the libraries
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#from-machine-import-pin" class="md-nav__link">
-    from machine import Pin
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#from-machine-import-pwm" class="md-nav__link">
-    from machine import PWM
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#define-constants" class="md-nav__link">
-    define constants
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#this-is-the-servos-driving-frequency-which-equals-20ms-1ft" class="md-nav__link">
-    This is the servo's driving frequency, which equals 20ms (1/f=t).
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#this-pwm-value-corresponds-to-the-servos-smallest-angle-0" class="md-nav__link">
-    This PWM value corresponds to the servo's smallest angle (0)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#this-pwm-value-corresponds-to-the-servos-largest-angle-180" class="md-nav__link">
-    This PWM value corresponds to the servo's largest angle (180)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#save-the-initial-time-in-nanoseconds-as-t0" class="md-nav__link">
-    save the initial time in nanoseconds as t0
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-a-new-pwm-instance-and-call-it-servo1" class="md-nav__link">
-    create a new PWM instance and call it servo1
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#here-is-our-main-loop" class="md-nav__link">
-    here is our main loop
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1155,7 +1078,8 @@
   </a>
 
 
-<h2 id="plan-for-today">Plan for today</h2>
+<!-- ## Plan for today -->
+
 <h2 id="what-is-a-gait">What is a "Gait"</h2>
 <h1 id="gaits">Gaits</h1>
 <h2 id="gaits_1">Gaits</h2>
@@ -1206,24 +1130,26 @@ def myfunction(variable1,variable2):
 a = math.sin()
 </code></pre>
 <h2 id="code">Code</h2>
-<p>```python</p>
-<h1 id="import-all-the-libraries">import all the libraries</h1>
-<h1 id="from-machine-import-pin">from machine import Pin</h1>
-<h1 id="from-machine-import-pwm">from machine import PWM</h1>
-<p>import math
+<pre><code class="language-python">#import all the libraries
+# from machine import Pin
+# from machine import PWM
+import math
 import time
 from machine import Pin
-from machine import PWM</p>
-<h1 id="define-constants">define constants</h1>
-<h1 id="this-is-the-servos-driving-frequency-which-equals-20ms-1ft">This is the servo's driving frequency, which equals 20ms (1/f=t).</h1>
-<p>servo_frequency = 50</p>
-<h1 id="this-pwm-value-corresponds-to-the-servos-smallest-angle-0">This PWM value corresponds to the servo's smallest angle (0)</h1>
-<p>range_low = 28</p>
-<h1 id="this-pwm-value-corresponds-to-the-servos-largest-angle-180">This PWM value corresponds to the servo's largest angle (180)</h1>
-<p>range_high = 122</p>
-<h1 id="save-the-initial-time-in-nanoseconds-as-t0">save the initial time in nanoseconds as t0</h1>
-<p>t0 = time.time_ns()</p>
-<p>def angle_to_pwm(degrees):
+from machine import PWM
+
+# define constants
+# This is the servo's driving frequency, which equals 20ms (1/f=t).
+servo_frequency = 50
+# This PWM value corresponds to the servo's smallest angle (0)
+range_low = 28
+# This PWM value corresponds to the servo's largest angle (180)
+range_high = 122
+
+# save the initial time in nanoseconds as t0
+t0 = time.time_ns()
+
+def angle_to_pwm(degrees):
     '''
     this function converts a desired angle to
     its corresponding PWM value, using the range_low 
@@ -1235,17 +1161,18 @@ from machine import PWM</p>
     input_range = 180-0
     # divide the desired angle by the input scaling, multiply
     #by the output scaling, and add the range_low value as an offset.
-    output_pwm = ((degrees/input_range)*output_range)+range_low</p>
-<pre><code>if output_pwm &lt; range_low:
-    output_pwm = range_low
+    output_pwm = ((degrees/input_range)*output_range)+range_low
 
-if output_pwm &gt; range_high:
-    output_pwm = range_high
+    if output_pwm &lt; range_low:
+        output_pwm = range_low
 
-# return the computed value as an integer
-return int(output_pwm)
-</code></pre>
-<p>def get_seconds_float():
+    if output_pwm &gt; range_high:
+        output_pwm = range_high
+
+    # return the computed value as an integer
+    return int(output_pwm)
+
+def get_seconds_float():
     '''
     This function accesses the internal time_ns() function and
     converts it to a floating point value in seconds
@@ -1258,42 +1185,46 @@ return int(output_pwm)
     # to seconds by multiplying by 10^9
     dt = float(dt)/1e9
     # return the change in time.
-    return dt</p>
-<p>f = .5
+    return dt
+
+f = .5
 A = 90
-b = 90</p>
-<p>l1 = 0
+b = 90
+
+l1 = 0
 l2 = .25
 l3 = .5
-l4 = .75</p>
-<h1 id="create-a-new-pwm-instance-and-call-it-servo1">create a new PWM instance and call it servo1</h1>
-<p>servo1 = PWM(Pin(13), servo_frequency)
+l4 = .75
+
+# create a new PWM instance and call it servo1
+servo1 = PWM(Pin(13), servo_frequency)
 servo2 = PWM(Pin(12), servo_frequency)
 servo3 = PWM(Pin(14), servo_frequency)
-servo4 = PWM(Pin(27), servo_frequency)</p>
-<h1 id="here-is-our-main-loop">here is our main loop</h1>
-<p>while True:
+servo4 = PWM(Pin(27), servo_frequency)
+
+# here is our main loop
+while True:
     # time.sleep is not as necessary...can be commented
     # out except if you want to print values out.
-    #time.sleep(.01)</p>
-<pre><code># get the current time in (floating-point) seconds
-t = get_seconds_float()
+    #time.sleep(.01)
 
-# compute the desired angle for servo 1
-y1 = A*(math.sin((2*(f*t-l1))*math.pi)) + b
-y2 = A*(math.sin((2*(f*t-l2))*math.pi)) + b
-y3 = A*(math.sin((2*(f*t-l3))*math.pi)) + b
-y4 = A*(math.sin((2*(f*t-l4))*math.pi)) + b
+    # get the current time in (floating-point) seconds
+    t = get_seconds_float()
 
-# print out the desired angle.  Not essential, can be commented out
-print(y1)
+    # compute the desired angle for servo 1
+    y1 = A*(math.sin((2*(f*t-l1))*math.pi)) + b
+    y2 = A*(math.sin((2*(f*t-l2))*math.pi)) + b
+    y3 = A*(math.sin((2*(f*t-l3))*math.pi)) + b
+    y4 = A*(math.sin((2*(f*t-l4))*math.pi)) + b
 
-# set servo 1 pwm value according to the desired angle
-servo1.duty(angle_to_pwm(y1))
-servo2.duty(angle_to_pwm(y2))
-servo3.duty(angle_to_pwm(y3))
-servo4.duty(angle_to_pwm(y4))
-```
+    # print out the desired angle.  Not essential, can be commented out
+    print(y1)
+
+    # set servo 1 pwm value according to the desired angle
+    servo1.duty(angle_to_pwm(y1))
+    servo2.duty(angle_to_pwm(y2))
+    servo3.duty(angle_to_pwm(y3))
+    servo4.duty(angle_to_pwm(y4))
 </code></pre>
 
 
