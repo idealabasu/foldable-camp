@@ -29,7 +29,7 @@ These installation instructions are for computers that **do** **not** have Pytho
     - Check the "Register Miniconda3 as the system Python" box
     - set other options as you like.
 2. Install additional software packages
-    1. In Windows, go to the search bar and type "cmd". Once you see the Command Prompt app in the list, right click on it and choose "Run as administrator" from the contextual menu.
+/home/danaukes/projects/project_esd_website_source/content/tutorials/installing-anaconda-python.md    1. In Windows, go to the search bar and type "cmd". Once you see the Command Prompt app in the list, right click on it and choose "Run as administrator" from the contextual menu.
     1. Paste each of the following lines (one at a time) at the command prompt and press enter:
 
 ``` {.bash}
