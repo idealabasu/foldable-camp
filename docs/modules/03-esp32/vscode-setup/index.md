@@ -1,6 +1,9 @@
 ---
-title: VS Code Setup and Usage
+title: VSCode Setup and Usage
+tags:
+- vscode
 ---
+
 
 ## Installation
 
@@ -13,6 +16,20 @@ Installation Options
 - keep "Add to PATH" checked
 - other options: set to your preference
 
+### Ubuntu-specific
+
+```bash
+cd ~/Downloads
+sudo dpkg -i code_1.7* #.... tab complete
+sudo apt install -yf
+```
+
+## Video
+
+<iframe width="720" height="480" src="https://www.youtube.com/embed/Polis0zBkFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Thanks to Wyatte for this helpful video
+
 ## Useful command-line arguments
 
 > Note: this only works if you added vscode to your system ```PATH```
@@ -23,13 +40,13 @@ Usage: code [options][paths...]
 
 Example:
 
-```
+```bash
 code -n ~/websites/danb0b.github.io/
 ```
 
 will open a new folder with that path loaded in the explorer window
 
-```
+```bash
   -a --add <folder>      Add folder(s) to the last active window.
   -n --new-window        Force to open a new window.
   -r --reuse-window      Force to open a file or folder in an already opened window.
@@ -61,24 +78,34 @@ will open a new folder with that path loaded in the explorer window
 |  ctrl+shift+i   |     format document      |
 |     ctrl+i      |   italicize selection    |
 |     ctrl+b      |      bold selection      |
+|      alt+z      |  switch text wrap mode   |
 
 ## Extensions
 
 from [here](https://code.visualstudio.com/docs/editor/command-line)
 
-open powershell and paste the following in:
+open a terminal window and paste the following in:
 
 ```bash
-code --install-extension bierner.markdown-yaml-preamble
-code --install-extension davidanson.vscode-markdownlint
-code --install-extension ms-python.isort
-code --install-extension ms-python.python
-code --install-extension ms-python.vscode-pylance
-code --install-extension Pycom.pymakr-preview
 code --install-extension redhat.vscode-yaml
-code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension yzane.markdown-pdf
 code --install-extension yzhang.markdown-all-in-one
+code --install-extension PKief.markdown-checkbox
+code --install-extension bierner.markdown-yaml-preamble
+code --install-extension Pycom.pymakr-preview
+code --install-extension ms-python.python
+code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension davidanson.vscode-markdownlint #highlight file problems
+code --install-extension James-Yu.latex-workshop
+code --install-extension ms-python.vscode-pylance
+code --install-extension ms-toolsai.jupyter
+code --install-extension ms-toolsai.jupyter-keymap
+code --install-extension ms-toolsai.jupyter-renderers
+code --install-extension ms-toolsai.vscode-jupyter-cell-tags
+code --install-extension ms-toolsai.vscode-jupyter-slideshow
+code --install-extension tamasfe.even-better-toml
+code --install-extension tecosaur.latex-utilities
+code --install-extension torn4dom4n.latex-support
 ```
 
 ```bash
@@ -99,37 +126,35 @@ ctrl_+ shift + I then formats your document
     code --install-extension Pycom.pymakr-preview
     ```
 
-Getting Started (from [here](https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md))
+#### Getting Started with Pymakr (from [here](https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md))
 
 1. In File explorer(```ctrl+shift+e```)
     1. add or create a project folder for holding your micropython code (suggestion: name it "micropython").  Consider creating one in your "code" git repository.
 1. navigate to "Pymakr: Projects" tab in the workspace explorer window on the left
     1. select "create project".  Select the same code folder as above and specify a project name (like "hello-world").  Select the option to create a subdirectory with the micropython folder.
 
-        ![Figure](new-project.png)
+        ![Define the name](project-name.png)
 
-        ![Figure](project-name.png)
+        ![create the project in a subfolder](project-structure.png)
 
-        ![Figure](empty project.png)
-
-        ![Figure](project-structure.png)
+        ![specify empty project](empty-project.png)
 
     1. Connect your device via usb to your computer
     1. Within the "hello-world" project that is created within the "Pymakr: Projects" tab, add a new device. Follow the prompts to select the appropriate com port
 
-        ![Figure](select-port.png)
+        ![Select your device](select-port.png)
 
     1. Connect to the device by selecting the lightning bolt icon
 
-        ![Figure](connect-device.png)
+        ![Connect to Device](connect-device.png)
 
     1. Open up a terminal window by selecting the box with an arrow in it
 
-        ![Figure](terminal-button.png)
+        ![Open up a Terminal Window](terminal-button.png)
 
     1. A terminal window should open and look like this:
 
-        ![Figure](terminal-output.png)
+        ![Example of terminal window](terminal-output.png)
 
         ```python
         MicroPython v1.19.1 on 2022-06-18; ESP32 module with ESP32
@@ -153,9 +178,9 @@ Getting Started (from [here](https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_S
 
         ![Figure](disconnect-button.png)
 
-## Working with the Python interpreter
+#### Working with Micropython
 
-Micropython can either run code from the interpreter (the "terminal" as vs code puts it), or by loading a file from its onboard storage.  When the ESP32 is reset (using the EN button), it looks for two files, in a specific order:
+Micropython can either run code from the interpreter (the "terminal" as VSCode puts it), or by loading a file from its onboard storage.  When the ESP32 is reset (using the EN button), it looks for two files, in a specific order:
 
 1. boot.py
 2. main.py
@@ -164,25 +189,38 @@ if there are any loops in these files that prevent execution from ending, you mu
 
 > You must always stop execution on the ESP32 before trying to upload files to it.
 
-## Saving files to/from the ESP32
+#### Saving files to/from the ESP32
 
 Within the "Pymakr: Projects" workspace there are several other buttons that you can use to sync files to the esp32
 
-* Upload project to device: Uploads all your project files to the device
-* Download project from device: Pulls files off the device
-* Open in Explorer: This opens up the ESP32 as a virtual file system in the file explorer and allows you to investigate and work with the file system directly.
+- Upload project to device: Uploads all your project files to the device
+- Download project from device: Pulls files off the device
+- Open in Explorer: This opens up the ESP32 as a virtual file system in the file explorer and allows you to investigate and work with the file system directly.
 
 From the file explorer window, you can also right click and select "pymakr-->upload to device" to upload individual files
 
+## Python
+
+When working with multiple python environments, you should make sure to use the correct one for the task you are doing.  To do this, you will need to select from a list of python interpreters.  Type ctrl+shift+p then type / select "python select interpreter" from the list.
+
+- <https://code.visualstudio.com/docs/python/python-tutorial>
+- <https://www.pythontutorial.net/getting-started/setup-visual-studio-code-for-python/>
+- <https://theproductiveengineer.net/how-to-set-up-vs-code-for-python/>
+
+### Debugging Python Code
+
+see this [reference](https://codelovingyogi.medium.com/vscode-debugging-python-scripts-with-args-d8ac1cf9a191) to add a debug configuration
+
 #### External Resources
 
-- <https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md>
-- <https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr>
-
-Other:
-
-- <https://randomnerdtutorials.com/micropython-esp32-esp8266-vs-code-pymakr/>
-- <https://lemariva.com/blog/2018/12/micropython-visual-studio-code-as-ide>
-- <https://lemariva.com/blog/2018/12/micropython-visual-studio-code-as-ide>
-- <https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/vscode-setup.html>
-- <https://stackoverflow.com/questions/67647095/how-to-setup-windows-10-vscode-pymakr-for-python-programming-micropython>
+- VSCode
+    - Main [Website](https://code.visualstudio.com/)
+    - Find help [here](https://code.visualstudio.com/docs/setup/linux)
+    - Download from [here](https://code.visualstudio.com/Download)
+- Pymakr & ESP32
+    - <https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md>
+    - <https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr>
+    - <https://randomnerdtutorials.com/micropython-esp32-esp8266-vs-code-pymakr/>
+    - <https://lemariva.com/blog/2018/12/micropython-visual-studio-code-as-ide>
+    - <https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/vscode-setup.html>
+    - <https://stackoverflow.com/questions/67647095/how-to-setup-windows-10-vscode-pymakr-for-python-programming-micropython>
