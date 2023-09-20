@@ -1129,15 +1129,23 @@
 <h3 id="anaconda-instructions">Anaconda Instructions</h3>
 <p><strong>Note:</strong> These instructions are for the smaller "Miniconda" distribution, that includes only the <code>conda</code> package manager that you can use to install only the packages that you want.  You can also install the full <a href="https://www.anaconda.com/products/individual#Downloads">Anaconda</a> distribution, and follow the same basic instructions.</p>
 <ol>
-<li>Download and install <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> (<a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">win64 quick link</a>) with the following options:<ul>
-<li>Install for "All Users (requires admin privileges)" to the default directory (e.g., C:\ProgramData\Miniconda3 )</li>
+<li>
+<p>Download and install <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> (<a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">win64 quick link</a>) with the following options:</p>
+<ul>
+<li>Install for "Just for Me" to the default directory (e.g., C:\ProgramData\Miniconda3 )</li>
+</ul>
+<blockquote>
+<p>the "install for everyone" option no longer permits you to add python to the system PATH</p>
+</blockquote>
+<ul>
 <li>Check the "Add Miniconda3 to the system PATH environment variable" box</li>
-<li>Check the "Register Miniconda3 as the system Python 3.9" box</li>
+<li>Check the "Register Miniconda3 as the system Python" box</li>
+<li>set other options as you like.</li>
+<li>Install additional software packages</li>
+<li>In Windows, go to the search bar and type "cmd". Once you see the Command Prompt app in the list, right click on it and choose "Run as administrator" from the contextual menu.</li>
+<li>Paste each of the following lines (one at a time) at the command prompt and press enter:</li>
 </ul>
 </li>
-<li>Install additional software packages
-    a.  In Windows, go to the search bar and type "cmd". Once you see the Command Prompt app in the list, right click on it and choose "Run as administrator" from the contextual menu.
-    b.  Paste each of the following lines (one at a time) at the command prompt and press enter:</li>
 </ol>
 <pre><code class="language-bash">conda update --all
 </code></pre>
