@@ -15,7 +15,7 @@ weight: 20
 
 You need to use Python on your PC to program the ESP32.
 
-1. install [miniconda](https://docs.conda.io/en/latest/miniconda.html) ([win64 quick link](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe)).  Follow this [tutorial](/installing-anaconda-python/) for detailed instructions.
+1. install [miniconda](https://docs.conda.io/en/latest/miniconda.html) ([win64 quick link](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe)).  Follow this [tutorial](../installing-anaconda-python/) for detailed instructions.
 
 1. **Installing Thonny and other Packages:** Open up powershell (win+x, i) and 
     1. type ```conda install -c conda-forge wrapt```
