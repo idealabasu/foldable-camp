@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../logo.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.7">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
             
 
         
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9f615399.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.649f08f9.min.css">
       
       
 
@@ -638,26 +638,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../installing-anaconda-python/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Miniconda/Anaconda (Python) Installation Tutorial
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../other-resources/" class="md-nav__link">
         
   
@@ -694,7 +674,7 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4_2" checked>
         
           
           
@@ -711,8 +691,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_4_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6_4_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_4_2">
             <span class="md-nav__icon md-icon"></span>
             Esp32 concepts
           </label>
@@ -755,6 +735,48 @@
   
   <span class="md-ellipsis">
     Esp32 installation and setup
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../installing-anaconda-python/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Installing anaconda python
   </span>
   
 
@@ -1186,7 +1208,6 @@
 
 ## TL/DR
 
-
 * RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn’t be used for UART in your project
 
 -->
@@ -1194,21 +1215,25 @@
 <h2 id="pinouts-schematics">Pinouts / Schematics</h2>
 <p><img alt="" src="img0000.png" /></p>
 <ul>
-<li>from https://randomnerdtutorials.com/getting-started-with-esp32/</li>
+<li>from <a href="https://randomnerdtutorials.com/getting-started-with-esp32/">https://randomnerdtutorials.com/getting-started-with-esp32/</a></li>
 </ul>
 <h2 id="board-layout">Board Layout</h2>
 <p><img alt="" src="img0001.png" /></p>
 <h2 id="mount-your-esp32-on-your-breadboard">Mount your ESP32 on your Breadboard</h2>
 <h2 id="esp32-links">ESP32 Links</h2>
 <ul>
-<li>Espressif</li>
+<li>Espressif<ul>
 <li>ESP32-WROOM-32 Datasheet</li>
 <li>ESP32-Devkit-C Page</li>
 <li>Devkit Technical Documents</li>
-<li>External Pinout Resources</li>
-<li>https://johnmu.com/picking-esp32-dev-board/</li>
-<li>https://www.etechnophiles.com/esp32-dev-board-pinout-specifications-datasheet-and-schematic/</li>
-<li>https://www.studiopieters.nl/esp32-pinout/</li>
+</ul>
+</li>
+<li>External Pinout Resources<ul>
+<li><a href="https://johnmu.com/picking-esp32-dev-board/">https://johnmu.com/picking-esp32-dev-board/</a></li>
+<li><a href="https://www.etechnophiles.com/esp32-dev-board-pinout-specifications-datasheet-and-schematic/">https://www.etechnophiles.com/esp32-dev-board-pinout-specifications-datasheet-and-schematic/</a></li>
+<li><a href="https://www.studiopieters.nl/esp32-pinout/">https://www.studiopieters.nl/esp32-pinout/</a></li>
+</ul>
+</li>
 </ul>
 <h1 id="micropython-intro">MicroPython Intro</h1>
 <h2 id="what-is-python">What is Python?</h2>
@@ -1216,35 +1241,34 @@
 <li>Easy to learn programming language</li>
 <li>Interpreted Language - write code and have it execute without compiling!</li>
 <li>Simple formatting: mostly spaces, few extraneous characters, similar basic keywords as other languages, easy access to complex data types</li>
-<li>An extensible system of software “packages”</li>
+<li>An extensible system of software “packages”<ul>
 <li>use pip/pypi to install</li>
-<li>
-<p>install straight from github!</p>
-</li>
-<li>
-<ul>
-<li>as of March 2022, tiobe.com</li>
+<li>install straight from github!</li>
 </ul>
 </li>
 </ul>
 <h2 id="is-there-anything-else">Is there anything else?</h2>
 <ul>
-<li>“Dynamically Typed”</li>
+<li>“Dynamically Typed”<ul>
 <li>Variables don’t need to be declared as one type or another. You simply set them equal to something and they become that data type.</li>
-<li>Object-oriented</li>
+</ul>
+</li>
+<li>Object-oriented<ul>
 <li>concept of classes and inheritance</li>
-<li>“Public” by definition</li>
+</ul>
+</li>
+<li>“Public” by definition<ul>
 <li>data is not easily hidden.</li>
 <li>data is accessible by anything</li>
 </ul>
+</li>
+</ul>
 <!-- ## So then, why other languages?
-
 
 * Lower level languages can be easier to connect to hardware’s functionality
 * Compilation makes running code faster and more memory efficient
 
 ## What is Anaconda/Miniconda?
-
 
 * A “distribution” of Python for your PC
   * A way to manage all the “packages” you can install on your PC
@@ -1270,7 +1294,6 @@
 <!-- 
 
 ## Why do I need to use Anaconda?
-
 
 * Many packages include libraries that are compiled specific to one operating system
 * this requires a compiler, and understanding the compilation process in case it doesn’t work
@@ -1416,8 +1439,10 @@ while True:
 <h2 id="micropython-esp32-resources">MicroPython / ESP32 Resources</h2>
 <ul>
 <li>MicroPython for ESP32 firmware download page</li>
-<li>ESP32 Micropython Documentation</li>
+<li>ESP32 Micropython Documentation<ul>
 <li>quickref</li>
+</ul>
+</li>
 <li>Asynchronous micropython-based MQTT repository</li>
 </ul>
 
@@ -1463,10 +1488,10 @@ while True:
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
       
     
   </body>

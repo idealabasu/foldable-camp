@@ -18,11 +18,11 @@
         <link rel="prev" href="../esp32-concepts/">
       
       
-        <link rel="next" href="../vscode-setup/">
+        <link rel="next" href="../installing-anaconda-python/">
       
       
       <link rel="icon" href="../../../logo.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.7">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
             
 
         
@@ -33,10 +33,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9f615399.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.649f08f9.min.css">
       
       
 
@@ -640,26 +640,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../installing-anaconda-python/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Miniconda/Anaconda (Python) Installation Tutorial
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../other-resources/" class="md-nav__link">
         
   
@@ -738,7 +718,7 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4_3" checked>
         
           
           
@@ -755,8 +735,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_4_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6_4_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_4_3">
             <span class="md-nav__icon md-icon"></span>
             Esp32 installation and setup
           </label>
@@ -766,6 +746,48 @@
             
           </ul>
         </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../installing-anaconda-python/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Installing anaconda python
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
       
     </li>
   
@@ -1029,8 +1051,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-device-drivers" class="md-nav__link">
-    Install Device Drivers
+  <a href="#install-device-drivers-required-for-windows" class="md-nav__link">
+    Install Device Drivers (Required for Windows)
   </a>
   
 </li>
@@ -1040,11 +1062,38 @@
     Flashing the ESP32 Firmware for MicroPython
   </a>
   
+    <nav class="md-nav" aria-label="Flashing the ESP32 Firmware for MicroPython">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-thonny-approach" class="md-nav__link">
+    Option 1: Thonny approach
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-command-line-approach-with-esptool" class="md-nav__link">
+    Option 2: Command-line approach with esptool
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#mac-specific-suggestions" class="md-nav__link">
-    Mac Specific Suggestions:
+    Mac Specific Suggestions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-resources" class="md-nav__link">
+    External Resources
   </a>
   
 </li>
@@ -1082,23 +1131,39 @@
   <h1>ESP32 Installation and Setup</h1>
 
 <h2 id="install-miniconda-and-packages">Install Miniconda and packages</h2>
-<p>You need to use Python on your PC to program the ESP32.</p>
+<blockquote>
+<p>You need to use Python on your PC to program the ESP32.  This assumes that you already have miniconda installed.  For more instructions, see <a href="../installing-anaconda-python/">here</a> for detailed instructions.</p>
+</blockquote>
 <ol>
 <li>
-<p>install <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> (<a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">win64 quick link</a>).  Follow this <a href="../installing-anaconda-python/">tutorial</a> for detailed instructions.</p>
+<p><strong>Installing Thonny and other Packages:</strong> Open up your anaconda environment (start--&gt;anaconda prompt)</p>
+<ol>
+<li>
+<p>(optional) Activate your desired environment <code>conda activate &lt;environment_name&gt;</code>.  </p>
+<blockquote>
+<p>You can ignore if you want to install in the base environment</p>
+</blockquote>
 </li>
 <li>
-<p><strong>Installing Thonny and other Packages:</strong> Open up powershell (win+x, i) and </p>
-<ol>
-<li>type <code>conda install -c conda-forge wrapt</code></li>
+<p>type the following to install a prerequisite package</p>
+<p><code>bash
+conda install -y -c conda-forge wrapt</code></p>
+</li>
 <li>
-<p>type <code>pip install esptool thonny</code></p>
+<p>Install the ESP32 commandline flashing tool</p>
+<p><code>bash
+pip install esptool</code></p>
+</li>
+<li>
+<p>To install Thonny type the following <em>(This is optional)</em>:</p>
+<p><code>bash
+pip install thonny</code></p>
 <p><strong>Note:</strong> on Mac, open up terminal or xterm and type <code>pip3 install esptool thonny</code></p>
 </li>
 </ol>
 </li>
 </ol>
-<h2 id="install-device-drivers">Install Device Drivers</h2>
+<h2 id="install-device-drivers-required-for-windows">Install Device Drivers <em>(Required for Windows)</em></h2>
 <p>The device drivers will help your computer recognize the ESP32 as a USB Device</p>
 <ol>
 <li>
@@ -1113,9 +1178,16 @@
 </ol>
 <h2 id="flashing-the-esp32-firmware-for-micropython">Flashing the ESP32 Firmware for MicroPython</h2>
 <ol>
-<li>
-<p>download <a href="https://micropython.org/download/esp32/">firmware</a> (I don't recommend v1.18, use the nightly build as it contains several more recent fixes to PWM)</p>
-</li>
+<li>download <a href="https://micropython.org/download/esp32/">firmware</a></li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> I don't recommend v1.18 due to PWM issues.</p>
+</blockquote>
+<h3 id="option-1-thonny-approach">Option 1: Thonny approach</h3>
+<blockquote>
+<p>Requires thonny to be installed, see <a href="#install-miniconda-and-packages">above</a></p>
+</blockquote>
+<ol>
 <li>
 <p>open cmd and type <code>thonny</code></p>
 <p><img alt="Start Thonny" src="10.png" /></p>
@@ -1132,7 +1204,7 @@
 <p><img alt="Install or Update Firmware" src="60.png" /></p>
 </li>
 <li>
-<p>select the firmware you downloaded, (e.g. "esp32-20220117-v1.18.bin") and hit "install".</p>
+<p>select the firmware you downloaded and hit "install".</p>
 <p><img alt="Select Firmware File" src="70.png" /></p>
 <p><img alt="Hit install" src="80.png" /></p>
 </li>
@@ -1141,9 +1213,9 @@
 <p><img alt="Done" src="90.png" /></p>
 </li>
 <li>
-<p>Look at the interpreter window.  You should see:</p>
-<p>```
-MicroPython v1.18 on 2022-01-17; ESP32 module with ESP32</p>
+<p>Look at the interpreter window.  You should see something similar to:</p>
+<p>```python
+MicroPython v1.XX on 20XX-YY-ZZ; ESP32 module with ESP32</p>
 <p>Type "help()" for more information.</p>
 <blockquote>
 <blockquote>
@@ -1159,7 +1231,27 @@ MicroPython v1.18 on 2022-01-17; ESP32 module with ESP32</p>
 <p><img alt="Hello World!" src="101.png" /></p>
 </li>
 </ol>
-<h2 id="mac-specific-suggestions">Mac Specific Suggestions:</h2>
+<h3 id="option-2-command-line-approach-with-esptool">Option 2: Command-line approach with <code>esptool</code></h3>
+<p>windows:</p>
+<pre><code class="language-bash">esptool --chip esp32 --port COM7 erase_flash
+</code></pre>
+<p>linux:</p>
+<pre><code class="language-bash">esptool.py --chip esp32 --port /dev/ttyUSB0 erase_flash
+</code></pre>
+<p>Now flash it using the template below.  Check device manager in windows to identify the appropriate COM port</p>
+<p>Windows:</p>
+<pre><code class="language-bash">esptool --chip esp32 --port &lt;serial_port&gt; write_flash -z 0x1000 &lt;esp32-X.bin&gt;
+</code></pre>
+<p>For Example:</p>
+<pre><code class="language-bash">esptool --chip esp32 --port COM7 write_flash -z 0x1000 Downloads/esp32-20220618-v1.19.1.bin
+</code></pre>
+<p>Linux:</p>
+<pre><code class="language-bash">esptool.py --chip esp32 --port &lt;serial_port&gt; write_flash -z 0x1000 &lt;esp32-X.bin&gt;
+</code></pre>
+<p>For Example:</p>
+<pre><code class="language-bash">esptool.py --chip esp32 --port /dev/ttyUSB0 write_flash -z 0x1000 esp32-20220618-v1.19.1.bin
+</code></pre>
+<h2 id="mac-specific-suggestions">Mac Specific Suggestions</h2>
 <ul>
 <li>use terminal or xterm if you have it as Macs do not have powershell</li>
 <li>use <code>pip3 install ...</code> instead of <code>pip install ...</code> with the most recent flavors of MacOS</li>
@@ -1178,6 +1270,11 @@ ls -al /dev/tty.</code></p>
 <p>when selecting the port, there may be two Silicon Labs CP210X USB to UART Bridge (ESP device name here) devices.  Watch the messages in the terminal to determine the correct selection (obviously, don't use the one that says error/cannot find/etc.)</p>
 </li>
 <li>when running the program you may need to press ctrl + c twice within thonny</li>
+</ul>
+<h2 id="external-resources">External Resources</h2>
+<ul>
+<li><a href="https://micropython.org/download/esp32/">https://micropython.org/download/esp32/</a></li>
+<li><a href="https://randomnerdtutorials.com/flashing-micropython-firmware-esptool-py-esp32-esp8266/">https://randomnerdtutorials.com/flashing-micropython-firmware-esptool-py-esp32-esp8266/</a></li>
 </ul>
 <hr />
 <h2 id="issues">Issues</h2>
@@ -1236,10 +1333,10 @@ ls -al /dev/tty.</code></p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
       
     
   </body>

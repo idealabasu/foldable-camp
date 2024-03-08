@@ -15,14 +15,14 @@
       
       
       
-        <link rel="prev" href="../../02-biomechanics-and-bioinspiration/">
+        <link rel="prev" href="../esp32-installation-and-setup/">
       
       
-        <link rel="next" href="../other-resources/">
+        <link rel="next" href="../vscode-setup/">
       
       
       <link rel="icon" href="../../../logo.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.7">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
             
 
         
@@ -33,10 +33,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9f615399.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.649f08f9.min.css">
       
       
 
@@ -638,89 +638,6 @@
                 
   
   
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Miniconda/Anaconda (Python) Installation Tutorial
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Miniconda/Anaconda (Python) Installation Tutorial
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#windows-installation" class="md-nav__link">
-    Windows Installation
-  </a>
-  
-    <nav class="md-nav" aria-label="Windows Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#anaconda-instructions" class="md-nav__link">
-    Anaconda Instructions
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
     <li class="md-nav__item">
       <a href="../other-resources/" class="md-nav__link">
@@ -815,6 +732,62 @@
     </a>
   
 
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">
+    Installing anaconda python
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_4_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Installing anaconda python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -1112,7 +1085,7 @@
                   
 
   
-    <a href="https://github.com/idealabasu/foldable-camp/edit/main/docs/modules/03-esp32/installing-anaconda-python.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/idealabasu/foldable-camp/edit/main/docs/modules/03-esp32/installing-anaconda-python/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1131,24 +1104,40 @@
 <ol>
 <li>
 <p>Download and install <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> (<a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">win64 quick link</a>) with the following options:</p>
-<ul>
-<li>Install for "Just for Me" to the default directory (e.g., C:\ProgramData\Miniconda3 )</li>
-</ul>
-<blockquote>
-<p>the "install for everyone" option no longer permits you to add python to the system PATH</p>
-</blockquote>
-<ul>
-<li>Check the "Add Miniconda3 to the system PATH environment variable" box</li>
-<li>Check the "Register Miniconda3 as the system Python" box</li>
-<li>set other options as you like.</li>
-<li>Install additional software packages</li>
-<li>In Windows, go to the search bar and type "cmd". Once you see the Command Prompt app in the list, right click on it and choose "Run as administrator" from the contextual menu.</li>
-<li>Paste each of the following lines (one at a time) at the command prompt and press enter:</li>
-</ul>
+<p><img alt="Installer" src="image00.png" />
+<img alt="Select Agree" src="image01.png" /></p>
+<ol>
+<li>
+<p>Install for "Just for Me" </p>
+<p><img alt="Select &quot;Just for Me&quot;" src="image02.png" /></p>
+</li>
+<li>
+<p>Accept the the default directory (e.g., C:\ProgramData\Miniconda3 )</p>
+<p><img alt="Accept default directory" src="image03.png" /></p>
+<!-- > the "install for everyone" option no longer permits you to add python to the system PATH -->
+<!-- - Check the "Add Miniconda3 to the system PATH environment variable" box -->
+</li>
+<li>
+<p>Keep the options page default, ensuring the "Register Miniconda3 as the system Python" box is checked</p>
+<p><img alt="Keep default options" src="image04.png" /></p>
+</li>
+<li>
+<p>Complete the installation</p>
+<p><img alt="Complete the Install" src="image05.png" /></p>
+<p><img alt="Complete the Install" src="image06.png" /></p>
 </li>
 </ol>
-<pre><code class="language-bash">conda update --all
+</li>
+<li>
+<p><strong>Update Conda.</strong> In Windows, go to the search bar and type "anaconda". Once you see the "Anaconda Prompt" app in the list, click on it.</p>
+<p><img alt="Anaconda Prompt" src="image08.png" /></p>
+</li>
+<li>
+<p>When the terminal opens, paste each of the following lines (one at a time) at the command prompt and press enter:</p>
+<pre><code>conda update --all
 </code></pre>
+</li>
+</ol>
 
 
 
@@ -1192,10 +1181,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
       
     
   </body>
