@@ -95,10 +95,14 @@ range_high = 122
 servo1 = PWM(Pin(13), frequency)
 servo2 = PWM(Pin(12), frequency)
 
-def angle_to_pwm(degrees):
-    output_range = 122-28
+def angle_to_pwm(angle):
+    output_range = range_high-range_low
     input_range = 180-0
-    output_pwm = ((degrees/input_range)*output_range)+range_low
+    output_pwm = (angle/input_range)*output_range+range_low
+    if output_pwm<range_low:
+        output_pwm=range_low
+    if output_pwm>range_high:
+        output_pwm=range_high
     return int(output_pwm)
     
 
