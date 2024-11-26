@@ -2,11 +2,16 @@
 title: Instructor Information
 ---
 
+## Dan Aukes
+
+Dan Aukes is an Associate Professor at Arizona State University at the Polytechnic Campus.  He runs the [IDEAlab](https://idealab.asu.edu) where his research focuses on the design of robots using everyday, uncommon, and new materials.  
+
+<!-- 
+
 ## Instructor Information
 
 ### Dan Aukes  
 
-Dan Aukes is an Assistant Professor at Arizona State University at the Polytechnic Campus.  He runs the [IDEAlab](https://idealab.asu.edu) where his research focuses on the design of robots using everyday, uncommon, and new materials.  
 
 **Contact info:**
 
@@ -29,4 +34,5 @@ Shawn Li is a graduating PhD student at ASU.  His expertise is in robot design, 
 
 ### Roberto Siqueiros
 
-Roberto is a Masters Student in Robotics and Autonomous Systems at ASU Poly.
+Roberto is a Masters Student in Robotics and Autonomous Systems at ASU Poly. 
+-->

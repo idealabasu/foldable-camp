@@ -29,6 +29,14 @@ theme:
 markdown_extensions:
   - pymdownx.tilde: {}
 
+
+draft_docs: |
+  **/*_unpublished.md
+  **/*_draft.md
+
+
+
+
 # nav:
 # - index.md
 # - what-to-bring.md
