@@ -11,12 +11,14 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
+        <meta name="author" content="Dan Aukes">
       
       
-        <link rel="prev" href="../installing-anaconda-python/">
+      
+        <link rel="prev" href="../esp32-concepts/">
       
       
-        <link rel="next" href="../../04-rc-servos/">
+        <link rel="next" href="../installing-anaconda-python/">
       
       
       <link rel="icon" href="../../../logo.png">
@@ -27,7 +29,7 @@
 
     
       
-        <title>VSCode Setup and Usage - Foldable Robotics Camp</title>
+        <title>ESP32 Installation and Setup - Foldable Robotics Camp</title>
       
     
     
@@ -77,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#install-miniconda-and-packages" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -108,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              VSCode Setup and Usage
+              ESP32 Installation and Setup
             
           </span>
         </div>
@@ -589,11 +596,11 @@
         
   
   
-    <a href="../../01-foldable-mechanisms/" class="md-nav__link">
+    <a href="../../01-foldable-mechanisms_draft/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
-    01 foldable mechanisms
+    01 foldable mechanisms draft
   </span>
   
 
@@ -631,11 +638,11 @@
         
   
   
-    <a href="../../02-biomechanics-and-bioinspiration/" class="md-nav__link">
+    <a href="../../02-biomechanics-and-bioinspiration_draft/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
-    02 biomechanics and bioinspiration
+    02 biomechanics and bioinspiration draft
   </span>
   
 
@@ -685,7 +692,7 @@
             
   
   <span class="md-ellipsis">
-    03 esp32
+    03 esp32 draft
   </span>
   
 
@@ -695,7 +702,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8_4">
             <span class="md-nav__icon md-icon"></span>
-            03 esp32
+            03 esp32 draft
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -765,6 +772,8 @@
                 
   
   
+    
+  
   
     
     
@@ -775,28 +784,40 @@
       
     
     
-      
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
-  
-  
-    <a href="../esp32-installation-and-setup/" class="md-nav__link">
-      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
   
   <span class="md-ellipsis">
     Esp32 installation and setup
   </span>
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Esp32 installation and setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -849,8 +870,6 @@
                 
   
   
-    
-  
   
     
     
@@ -861,40 +880,28 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_5" checked>
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
-              
+  
+  
+    <a href="../vscode-setup/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     Vscode setup
   </span>
   
 
-            </a>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_8_4_5">
-            <span class="md-nav__icon md-icon"></span>
-            Vscode setup
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
       
     </li>
   
@@ -931,11 +938,11 @@
         
   
   
-    <a href="../../04-rc-servos/" class="md-nav__link">
+    <a href="../../04-rc-servos_draft/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
-    04 rc servos
+    04 rc servos draft
   </span>
   
 
@@ -973,11 +980,11 @@
         
   
   
-    <a href="../../05-gaits-and-functions/" class="md-nav__link">
+    <a href="../../05-gaits-and-functions_draft/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
-    05 gaits and functions
+    05 gaits and functions draft
   </span>
   
 
@@ -1015,11 +1022,11 @@
         
   
   
-    <a href="../../06-introduction-to-parts/" class="md-nav__link">
+    <a href="../../06-introduction-to-parts_draft/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
-    06 introduction to parts
+    06 introduction to parts draft
   </span>
   
 
@@ -1057,11 +1064,11 @@
         
   
   
-    <a href="../../07-sensors/" class="md-nav__link">
+    <a href="../../07-sensors_draft/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
-    07 sensors
+    07 sensors draft
   </span>
   
 
@@ -1102,6 +1109,76 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-miniconda-and-packages" class="md-nav__link">
+    Install Miniconda and packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-device-drivers-required-for-windows" class="md-nav__link">
+    Install Device Drivers (Required for Windows)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flashing-the-esp32-firmware-for-micropython" class="md-nav__link">
+    Flashing the ESP32 Firmware for MicroPython
+  </a>
+  
+    <nav class="md-nav" aria-label="Flashing the ESP32 Firmware for MicroPython">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-thonny-approach" class="md-nav__link">
+    Option 1: Thonny approach
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-command-line-approach-with-esptool" class="md-nav__link">
+    Option 2: Command-line approach with esptool
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mac-specific-suggestions" class="md-nav__link">
+    Mac Specific Suggestions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-resources" class="md-nav__link">
+    External Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#issues" class="md-nav__link">
+    Issues
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1115,7 +1192,7 @@
                   
 
   
-    <a href="https://github.com/idealabasu/foldable-camp/edit/main/docs/modules/03-esp32/vscode-setup/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/idealabasu/foldable-camp/edit/main/docs/modules/03-esp32_draft/esp32-installation-and-setup/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1123,9 +1200,168 @@
   
 
 
-  <h1>VSCode Setup and Usage</h1>
+  <h1>ESP32 Installation and Setup</h1>
 
-<p>please see <a href="https://danaukes.com/notebook/vscode-setup/">this page</a> for vscode information.</p>
+<h2 id="install-miniconda-and-packages">Install Miniconda and packages</h2>
+<blockquote>
+<p>You need to use Python on your PC to program the ESP32.  This assumes that you already have miniconda installed.  For more instructions, see <a href="../installing-anaconda-python/">here</a> for detailed instructions.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Installing Thonny and other Packages:</strong> Open up your anaconda environment (start--&gt;anaconda prompt)</p>
+<ol>
+<li>
+<p>(optional) Activate your desired environment <code>conda activate &lt;environment_name&gt;</code>.  </p>
+<blockquote>
+<p>You can ignore if you want to install in the base environment</p>
+</blockquote>
+</li>
+<li>
+<p>type the following to install a prerequisite package</p>
+<p><code>bash
+conda install -y -c conda-forge wrapt</code></p>
+</li>
+<li>
+<p>Install the ESP32 commandline flashing tool</p>
+<p><code>bash
+pip install esptool</code></p>
+</li>
+<li>
+<p>To install Thonny type the following <em>(This is optional)</em>:</p>
+<p><code>bash
+pip install thonny</code></p>
+<p><strong>Note:</strong> on Mac, open up terminal or xterm and type <code>pip3 install esptool thonny</code></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="install-device-drivers-required-for-windows">Install Device Drivers <em>(Required for Windows)</em></h2>
+<p>The device drivers will help your computer recognize the ESP32 as a USB Device</p>
+<ol>
+<li>
+<p>Install <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers">Silabs cp210x driver</a> (<a href="https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip">windows download</a>)</p>
+<p><em>This step is required if the device is not recognized as a virtual COM port.</em></p>
+<p><img alt="Open Device Manager and Select Update Driver" src="00.png" /></p>
+<p><img alt="Browse specific directories" src="01.png" /></p>
+<p><img alt="Select the directory" src="02.png" /></p>
+<p><img alt="Let it Install" src="04.png" /></p>
+<p><img alt="Done" src="05.png" /></p>
+</li>
+</ol>
+<h2 id="flashing-the-esp32-firmware-for-micropython">Flashing the ESP32 Firmware for MicroPython</h2>
+<ol>
+<li>download <a href="https://micropython.org/download/esp32/">firmware</a></li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> I don't recommend v1.18 due to PWM issues.</p>
+</blockquote>
+<h3 id="option-1-thonny-approach">Option 1: Thonny approach</h3>
+<blockquote>
+<p>Requires thonny to be installed, see <a href="#install-miniconda-and-packages">above</a></p>
+</blockquote>
+<ol>
+<li>
+<p>open cmd and type <code>thonny</code></p>
+<p><img alt="Start Thonny" src="10.png" /></p>
+</li>
+<li>
+<p>open up tools--&gt;options, select the "interpreter" tab and ensure that "Micropython (ESP32)" is selected.  Select the "Silicon Labs CP210X USB to UART Bridge Com(XY)" down below.</p>
+<p><img alt="Open Tools--&gt;Options" src="20.png" /></p>
+<p><img alt="Select Interpreter Tab, then the ESP32 Interpreter" src="30.png" /></p>
+<p><img alt="Select the Port" src="40.png" /></p>
+<p><img alt="Selection Made" src="50.png" /></p>
+</li>
+<li>
+<p>Before selecting ok, in the bottom right hand corner select "install or update firmware".  select the right port corresponding to the "Silicon Labs CP210X USB to UART Bridge Com(XY)"</p>
+<p><img alt="Install or Update Firmware" src="60.png" /></p>
+</li>
+<li>
+<p>select the firmware you downloaded and hit "install".</p>
+<p><img alt="Select Firmware File" src="70.png" /></p>
+<p><img alt="Hit install" src="80.png" /></p>
+</li>
+<li>
+<p>wait for the install to finish</p>
+<p><img alt="Done" src="90.png" /></p>
+</li>
+<li>
+<p>Look at the interpreter window.  You should see something similar to:</p>
+<p>```python
+MicroPython v1.XX on 20XX-YY-ZZ; ESP32 module with ESP32</p>
+<p>Type "help()" for more information.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>```</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><img alt="Blank" src="100.png" /></p>
+</li>
+<li>
+<p>type <code>print('hello, world!')</code> into the shell and that's it!  You should have a working python interpreter loaded on your ESP32!</p>
+<p><img alt="Hello World!" src="101.png" /></p>
+</li>
+</ol>
+<h3 id="option-2-command-line-approach-with-esptool">Option 2: Command-line approach with <code>esptool</code></h3>
+<p>windows:</p>
+<pre><code class="language-bash">esptool --chip esp32 --port COM7 erase_flash
+</code></pre>
+<p>linux:</p>
+<pre><code class="language-bash">esptool.py --chip esp32 --port /dev/ttyUSB0 erase_flash
+</code></pre>
+<p>Now flash it using the template below.  Check device manager in windows to identify the appropriate COM port</p>
+<p>Windows:</p>
+<pre><code class="language-bash">esptool --chip esp32 --port &lt;serial_port&gt; write_flash -z 0x1000 &lt;esp32-X.bin&gt;
+</code></pre>
+<p>For Example:</p>
+<pre><code class="language-bash">esptool --chip esp32 --port COM7 write_flash -z 0x1000 Downloads/esp32-20220618-v1.19.1.bin
+</code></pre>
+<p>Linux:</p>
+<pre><code class="language-bash">esptool.py --chip esp32 --port &lt;serial_port&gt; write_flash -z 0x1000 &lt;esp32-X.bin&gt;
+</code></pre>
+<p>For Example:</p>
+<pre><code class="language-bash">esptool.py --chip esp32 --port /dev/ttyUSB0 write_flash -z 0x1000 esp32-20220618-v1.19.1.bin
+</code></pre>
+<h2 id="mac-specific-suggestions">Mac Specific Suggestions</h2>
+<ul>
+<li>use terminal or xterm if you have it as Macs do not have powershell</li>
+<li>use <code>pip3 install ...</code> instead of <code>pip install ...</code> with the most recent flavors of MacOS</li>
+<li>
+<p>make sure <code>pip</code> or <code>pip3</code>(Mac) is updated to avoid installation errors</p>
+<p><code>bash
+python3 -m pip install --upgrade pip</code></p>
+</li>
+<li>
+<p>Mac doesn't do COM, but can list USB devices.  In your terminal, type:</p>
+<p><code>bash
+ls -al /dev/tty.</code></p>
+<p>then unplug your ESP32 and run the previous command again to see which name for the device is the ESP32</p>
+</li>
+<li>
+<p>when selecting the port, there may be two Silicon Labs CP210X USB to UART Bridge (ESP device name here) devices.  Watch the messages in the terminal to determine the correct selection (obviously, don't use the one that says error/cannot find/etc.)</p>
+</li>
+<li>when running the program you may need to press ctrl + c twice within thonny</li>
+</ul>
+<h2 id="external-resources">External Resources</h2>
+<ul>
+<li><a href="https://micropython.org/download/esp32/">https://micropython.org/download/esp32/</a></li>
+<li><a href="https://randomnerdtutorials.com/flashing-micropython-firmware-esptool-py-esp32-esp8266/">https://randomnerdtutorials.com/flashing-micropython-firmware-esptool-py-esp32-esp8266/</a></li>
+</ul>
+<hr />
+<h2 id="issues">Issues</h2>
+<p>If you install on a computer where you don't have administrative access, it is still possible to install  but you have to remember a couple things:</p>
+<p>After instlling anaconda, you must add it to your path every time you want to run it.  </p>
+<ol>
+<li>
+<p>Start --&gt; "cmd"</p>
+<p><code>set PATH=C:\Users\&lt;MYUSERNAME&gt;\Miniconda3;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\mingw-w64\bin;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\usr\bin;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\bin;C:\Users\daukes\Miniconda3\Scripts;%PATH%</code></p>
+<ul>
+<li>Replace <MYUSERNAME> with your username; confirm the path exists.</li>
+<li>This step is required every time you load thonny if you installed "just for me" or are on an administratively locked pc.</li>
+</ul>
+</li>
+</ol>
 
 
 
